@@ -76,7 +76,8 @@
         "https://www.facebook.com/share/1ERDS5ShSP/",
         "https://www.linkedin.com/in/md-shahin-alam-sadip-938a02421",
         "https://www.instagram.com/md.shahin.alam.sadip.official",
-        "https://www.tiktok.com/@md.shahin.alam.sadip.8"
+        "https://www.tiktok.com/@md.shahin.alam.sadip.8",
+        "https://github.com/mdsahinalamsadip-lang"
       ]
     }
     </script>
@@ -101,6 +102,14 @@
         .gallery-img { width: 100%; height: 240px; object-fit: cover; border-radius: 10px; border: 2px solid #30363d; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: 0.3s ease; }
         .gallery-img:hover { border-color: #58a6ff; transform: translateY(-5px); }
         .img-caption { margin-top: 8px; font-size: 0.95rem; color: #8b949e; font-style: italic; }
+        
+        /* App/Project & Code Card Styling */
+        .project-card { background-color: #21262d; border-radius: 10px; padding: 25px; margin-bottom: 20px; border: 1px solid #30363d; }
+        .project-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+        .project-title { color: #58a6ff; font-size: 1.5rem; margin: 0; }
+        .tech-stack { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; }
+        .tech-tag { background-color: #0d1117; color: #79c0ff; border: 1px solid #388bfd66; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem; }
+        
         .skills-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 15px; }
         .skills-badge { background-color: #21262d; padding: 10px 22px; border-radius: 25px; border: 1px solid #30363d; font-size: 1rem; color: #c9d1d9; font-weight: 500; transition: 0.3s; }
         .skills-badge:hover { background-color: #58a6ff; color: #0d1117; border-color: #58a6ff; }
@@ -110,6 +119,8 @@
         .btn-linkedin { background-color: #0a66c2; }
         .btn-insta { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
         .btn-tiktok { background-color: #010101; border: 1px solid #30363d; }
+        .btn-github { background-color: #238636; }
+        .btn-app { background-color: #8957e5; }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(88,166,255,0.35); }
         footer { background-color: #161b22; padding: 30px; font-size: 0.95rem; color: #8b949e; text-align: center; border-top: 1px solid #30363d; margin-top: 5px; }
     </style>
@@ -117,7 +128,7 @@
 <body>
 
 <header>
-    <img src="profile.jpg" alt="Md Shahin Alam Sadip" class="profile-img" onerror="this.src='https://placeholder.com'">
+    <img src="profile.jpg" alt="Md Shahin Alam Sadip" class="profile-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/160';">
     <h1>Md Shahin Alam Sadip</h1>
     <div class="subtitle">Professional App Developer & Technical Expert</div>
     <div class="bio-quote">"Try to leave this world a little better than you found it."</div>
@@ -127,13 +138,34 @@
 
     <div class="section">
         <h2>✨ ব্যক্তিগত পরিচিতি (About Me)</h2>
-        <p>আমি <strong>Md Shahin Alam Sadip (মোঃ শাহিন আলম চাদিপ)</strong>। আমার জন্ম ২০০৪ সালের ১১ই অক্টোবর কুমিল্লার চৌদ্দগ্রামের কিং শ্রাপুর গ্রামের এক সম্ভ্রান্ত মুসলিম পরিবারে। আমি আমার মা-বাবার প্রথম সন্তান। ছোটবেলা থেকেই প্রযুক্তি, কারিগরি শিল্প এবং কোডিংয়ের মায়াময় দুনিয়ায় নিজেকে হারিয়ে ফেলা আর নতুন কিছু সৃষ্টি করাই আমার জীবনের অন্যতম প্রধান আনন্দ। একজন সাধারণ তরুণ থেকে আজ নিজেকে কারিগরি শিক্ষায় দক্ষ ও একজন পেশাদার অ্যাপ্লিকেশন ডেভেলপার হিসেবে গড়ে তোলার পেছনে রয়েছে এক চমৎকার পথচলা।</p>
+        <p>আমি <strong>Md Shahin Alam Sadip (মোঃ শাহিন আলম চাদিপ)</strong>। আমার জন্ম ২০০৪ সালের ১১ই অক্টোবর কুমিল্লার চৌদ্দগ্রামের কিং শ্রীপুর গ্রামের এক সম্ভ্রান্ত মুসলিম পরিবারে। আমি আমার মা-বাবার প্রথম সন্তান। ছোটবেলা থেকেই প্রযুক্তি, কারিগরি শিল্প এবং কোডিংয়ের মায়াময় দুনিয়ায় নিজেকে হারিয়ে ফেলা আর নতুন কিছু সৃষ্টি করাই আমার জীবনের অন্যতম প্রধান আনন্দ। একজন সাধারণ তরুণ থেকে আজ নিজেকে কারিগরি শিক্ষায় দক্ষ ও একজন পেশাদার অ্যাপ্লিকেশন ডেভেলপার হিসেবে গড়ে তোলার পেছনে রয়েছে এক চমৎকার পথচলা।</p>
         <ul class="info-list">
             <li><strong>জন্ম তারিখ:</strong> ১১ অক্টোবর ২০০৪ (11/10/2004)</li>
-            <li><strong>জন্মস্থান:</strong> কিং শ্রাপুর, চৌদ্দগ্রাম, কুমিল্লা</li>
+            <li><strong>জন্মস্থান:</strong> কিং শ্রীপুর, চৌদ্দগ্রাম, কুমিল্লা</li>
             <li><strong>জাতীয়তা:</strong> বাংলাদেশী (মুসলিম)</li>
             <li><strong>পেশা:</strong> অ্যাপস ডেভেলপার ও টেকনিক্যাল এক্সপার্ট</li>
         </ul>
+    </div>
+
+    <!-- Skyou App index.html & Technical Project Section -->
+    <div class="section">
+        <h2>📱 আমার তৈরি অ্যাপস ও প্রজেক্টস (Featured Apps)</h2>
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">🚀 Skyou App</h3>
+            </div>
+            <p style="margin-top: 10px;">আমার তৈরি প্রথম সফল মোবাইল অ্যাপ্লিকেশন। অ্যাপ্লিকেশনটি Flutter, Dart এবং Firebase প্রযুক্তিতে তৈরি। অ্যাপটি সরাসরি ওয়েবে ভিজিট করতে নিচের বাটনে ক্লিক করুন:</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Flutter & Dart</span>
+                <span class="tech-tag">HTML5 / Web App</span>
+                <span class="tech-tag">Firebase & REST API</span>
+                <span class="tech-tag">iOS / Android Design</span>
+            </div>
+            <div style="margin-top: 15px;">
+                <!-- Skyou app index.html link -->
+                <a href="skyou/index.html" class="btn btn-app" target="_blank" rel="noopener">🌐 Skyou App (index.html) দেখুন</a>
+            </div>
+        </div>
     </div>
 
     <div class="section">
@@ -172,15 +204,24 @@
         </div>
     </div>
 
-    <h2 class="gallery-title">📸 ছবির অ্যালবামে আমার জীবন (My Gallery)</h2>
+    <h2 class="gallery-title">📸 ছবির অ্যালবামে আমার জীবন ও কাজ (My Gallery)</h2>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="family.jpg" alt="Md Shahin Alam Sadip with Family" class="gallery-img" onerror="this.src='https://placeholder.com'">
+            <img src="family.jpg" alt="Md Shahin Alam Sadip with Family" class="gallery-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/360x240';">
             <div class="img-caption">আমার আপনজন, আমার শক্তির উৎস—আমার পরিবার</div>
         </div>
         <div class="gallery-item">
-            <img src="college.jpg" alt="Md Shahin Alam Sadip - Education Life" class="gallery-img" onerror="this.src='https://placeholder.com'">
+            <img src="college.jpg" alt="Md Shahin Alam Sadip - Education Life" class="gallery-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/360x240';">
             <div class="img-caption">ক্যাম্পাস ও কারিগরি শিক্ষার রঙিন দিনগুলো</div>
+        </div>
+        <!-- লার্নিং ইঞ্জিনিয়ারিং ইনস্টিটিউটের নতুন ছবিসমূহ -->
+        <div class="gallery-item">
+            <img src="learning1.jpg" alt="Learning Engineering Institute Training" class="gallery-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/360x240';">
+            <div class="img-caption">লার্নিং ইঞ্জিনিয়ারিং ইনস্টিটিউটে প্র্যাকটিক্যাল ট্রেনিংয়ের মুহূর্ত</div>
+        </div>
+        <div class="gallery-item">
+            <img src="learning2.jpg" alt="Wiring and AC Engineering Training" class="gallery-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/360x240';">
+            <div class="img-caption">ওয়্যারিং ও এসি-ফ্রিজ ইঞ্জিনিয়ারিং শেখার প্র্যাকটিক্যাল ক্লাস</div>
         </div>
     </div>
 
@@ -188,10 +229,11 @@
         <h2>🌐 সামাজিক যোগাযোগ মাধ্যম (Stay Connected)</h2>
         <p>আমার তৈরি করা বিভিন্ন প্রজেক্ট দেখতে এবং আমার নিয়মিত কাজের সাথে যুক্ত থাকতে আমার সাথে যুক্ত হতে পারেন:</p>
         <div class="social-links">
-            <a href="https://www.facebook.com/share/1ERDS5ShSP/" class="btn btn-fb" target="_blank">Facebook</a>
-            <a href="https://www.linkedin.com/in/md-shahin-alam-sadip-938a02421" class="btn btn-linkedin" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/md.shahin.alam.sadip.official" class="btn btn-insta" target="_blank">Instagram</a>
-            <a href="https://www.tiktok.com/@md.shahin.alam.sadip.8" class="btn btn-tiktok" target="_blank">TikTok</a>
+            <a href="https://github.com/mdsahinalamsadip-lang" class="btn btn-github" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.facebook.com/share/1ERDS5ShSP/" class="btn btn-fb" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.linkedin.com/in/md-shahin-alam-sadip-938a02421" class="btn btn-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/md.shahin.alam.sadip.official" class="btn btn-insta" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/@md.shahin.alam.sadip.8" class="btn btn-tiktok" target="_blank" rel="noopener">TikTok</a>
         </div>
     </div>
 
@@ -202,4 +244,4 @@
 </footer>
 
 </body>
-                                                                                          </html>
+                   </html>
